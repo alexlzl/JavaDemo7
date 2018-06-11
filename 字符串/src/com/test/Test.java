@@ -21,9 +21,10 @@ public class Test {
         System.out.println(name1.codePointAt(0));//20005
         System.out.println(Arrays.toString(charToByte2(c1)));
         System.out.println(Arrays.toString(charToByte2(c2)));
-        getByteString(c1);//100111000100101============ 2字节
+        getByteString(c1);//1001 1100 0100 101============ 2字节
         getByteString(c2);//1100001  ================1字节
         getByteString(c3);//101100   ===========1字节
+        System.out.println(Integer.toBinaryString(100));//1100100
     }
 
     public static byte[] charToByte2(char c) {
