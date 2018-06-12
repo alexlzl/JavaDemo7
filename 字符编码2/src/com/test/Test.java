@@ -33,5 +33,10 @@ public class Test {
 
         System.out.println("字符长度为：" + len);
 
+        String  string="你";
+        String str2="你好";
+        System.out.println(string.getBytes("utf-16").length);//4
+        System.out.println(str2.getBytes("utf-16").length);//6
+
     }
 }
