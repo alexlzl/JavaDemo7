@@ -14,5 +14,6 @@ public class Test2 {
         int[][] bb={{1,2},{3,5},{6,7}};
         System.out.println(Arrays.deepToString(aa));
         System.out.println(Arrays.deepToString(bb));
+        System.out.println(aa.getClass().getName());
     }
 }

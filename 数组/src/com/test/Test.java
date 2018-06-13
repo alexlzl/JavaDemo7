@@ -21,5 +21,12 @@ public class Test {
 
         System.out.println(Arrays.toString(bb));
 
+        System.out.println(aa.getClass().getName());
+
+        String[] aaa={"sa","ab"};
+        System.out.println(aaa.getClass().getName());
+
+        Test[] t={new Test()};
+        System.out.println(t.getClass().getName());
     }
 }
