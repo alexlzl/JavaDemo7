@@ -8,6 +8,8 @@ public class Test1 {
     public static void main(String[] args) {
         String s1 = "abc";
         String s2 = "abc";
+        System.out.println(s1.hashCode());
+        System.out.println(s2.hashCode());
         System.out.println(s1 == s2);//返回true
         /**
          * String s = new String("abc")实际上是"abc"本身就是常量池中的一个对象，在运行 new String()时，把常量池即pool中的字符串"abc"复制到堆中，并把这个对象的应用交给s，所以创建了两个String对象，一个在pool中，一个在堆中
@@ -15,7 +17,12 @@ public class Test1 {
         String s11 = new String("abc");
         String s22 = new String("abc");
         System.out.println(s11 == s22);//返回false
-
+        System.out.println((s11 == s1)+"============");//false
+        String sa = "abcd";
+        String sa1 = "ab" + "cd";
+        System.out.println(sa.hashCode());//2987074
+        System.out.println(sa1.hashCode());//2987074
+        System.out.println((sa == sa1) + "===============");//true
         test();
     }
 
