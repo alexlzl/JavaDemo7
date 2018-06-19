@@ -12,7 +12,7 @@ public class Test1 {
         String ss2="cd";
         String s3="abcd";
         String ss4=ss1+ss2;
-        System.out.println((s3==ss4)+"========");//false
+        System.out.println((s3==(ss1+ss2))+"========");//false
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
         System.out.println(s1 == s2);//返回true
