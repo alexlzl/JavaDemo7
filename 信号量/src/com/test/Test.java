@@ -9,6 +9,9 @@ import java.util.concurrent.Semaphore;
  */
 public class Test {
     public static void main(String[] args) throws Exception{
+        final  int a;
+        final int b;
+        b=10;
 
         // 线程池
 
@@ -23,7 +26,6 @@ public class Test {
         for (int index = 0; index < 20; index++) {
 
             final int NO = index;
-
             Runnable run = new Runnable() {
 
                 public void run() {
