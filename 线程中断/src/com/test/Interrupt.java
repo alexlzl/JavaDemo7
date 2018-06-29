@@ -38,9 +38,9 @@ public class Interrupt {
                  *   就是在监视线程的中断状态，一旦线程的中断状态被置为“中断状态”，就会抛出中断异常
                  */
                 System.out.println("子线程中断状态: " +
-                        Thread.currentThread().interrupted());
+                        Thread.currentThread().interrupted());//false
                 System.out.println("子线程中断状态: " +
-                        Thread.currentThread().isInterrupted());
+                        Thread.currentThread().isInterrupted());//false
             }
 
             System.out.println("子线程停止========================.");
