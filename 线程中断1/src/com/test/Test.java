@@ -19,9 +19,11 @@ public class Test {
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                    System.out.println("扫描线程结束==================");
+                    return;
                 }
 
-                System.out.println("扫描线程结束==================");
+                System.out.println("扫描线程结束11==================");
             }
         };
 
@@ -55,7 +57,8 @@ public class Test {
         }
         File[] allFiles = f.listFiles();
         if (Thread.interrupted()) {
-//            System.out.println("抛出异常==================");
+            //执行了Thread.interrupted() 清除了线程中断状态
+            System.out.println("抛出异常=================="+Thread.interrupted());//false
             throw new InterruptedException("文件扫描任务被中断");
         }
         if(allFiles!=null&&allFiles.length>0){
