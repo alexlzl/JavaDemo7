@@ -55,6 +55,7 @@ public class Test {
         }
         File[] allFiles = f.listFiles();
         if (Thread.interrupted()) {
+//            System.out.println("抛出异常==================");
             throw new InterruptedException("文件扫描任务被中断");
         }
         if(allFiles!=null&&allFiles.length>0){
